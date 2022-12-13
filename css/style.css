@@ -232,10 +232,58 @@ article.how {
   padding-bottom: 50px;
 }
 
-img.ball {
+body.drug {
+  background-color: #b3d5e0;
+}
+body.drug1 {
+  background-color: #9799d2;
+}
+
+body.drug2 {
+  background-color: #EFAFF3;
+}
+
+body.drug3 {
+  background-color: #A1F3DD;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+  color: black;
+  text-align: center;
+  font-size: 4em;
 
 }
 
+article.description {
+color: black;
+margin-right: 500px;
+text-align: left;
+font-size: 1.4em;
+line-height: 1.2em;
+padding-left: 50px;
+}
+
+article.benefits {
+  color:purple;
+  font-size: 2em;
+  text-align: center;
+  margin-top: 150px;
+}
+
+article.benefits2 {
+  color:purple;
+  font-size: 2em;
+  text-align: center;
+  margin-top: 100px;
+}
+
+img.structure {
+position: absolute;
+top: 180px;
+right: 70px;
+}
 
 article.headline {
   grid-column: 1/4;
