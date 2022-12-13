@@ -169,7 +169,7 @@ h1 {
   text-shadow: 5px 5px 0 #000000;
 }
 
-h2 {
+h2.subheader {
     text-shadow: 1px 1px 0 white;
     font-size: 2em;
     text-align: center;
@@ -183,7 +183,7 @@ section.parent {
 }
 
 section.overview {
-  background-color: #9b9bd9;
+  background-color: #6851a1;
 }
 
 article {
@@ -200,7 +200,9 @@ article.question {
   font-weight: bolder;
   font-size: 2.5em;
   margin-left: 500px;
-  color: #8059da;
+  color: #b3d5e0;
+  text-align: right;
+  margin-right: 50px;
 }
 
 article.questiontwo {
@@ -208,8 +210,9 @@ article.questiontwo {
   text-transform: uppercase;
   font-size: 2.5em;
   margin-right: 500px;
-  color: #8059da;
+  color: #b3d5e0;
   text-align: left;
+  margin-left: 50px;
 }
 
 article.what {
@@ -241,31 +244,42 @@ article.headline {
   margin-top: 200px;
 }
 
+body.catalog {
+  background: url(../images/catalog3.jpg) center no-repeat;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  /* grid-column-gap: 20px;
+    grid-row-gap: 50px; */
+  grid-gap: 20px;
+}
+
 div.spheres {
   display: grid;
   place-items: center;
 }
 
-.a4 {
+.lsd {
   width:300px;
   height: 300px;
   background: #9B86C8;
   border-radius: 50%;
   border: 7px solid #fff;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
   font-size: 32px;
   font-family: 'Zen Dots', cursive;
   text-align: center;
-  grid-column: 1/1;
-  grid-row: 2/ 4;
+  grid-column: 2/4;
+  grid-row: 3/ 5;
 }
-.a4:hover {
+.lsd:hover {
   animation: vibrate-1 1s linear infinite both;
 }
 
-.a9 {
+.mdma {
   width:300px;
   height: 300px;
   background: #9B86C8;
@@ -279,11 +293,11 @@ div.spheres {
   text-align: center;
 }
 
-.a9:hover {
+.mdma:hover {
   animation: vibrate-1 1s linear infinite both;
 }
 
-.a8 {
+.aya {
   width:300px;
   height: 300px;
   background: #9B86C8;
@@ -297,7 +311,7 @@ div.spheres {
   text-align: center;
 }
 
-.a8:hover {
+.aya:hover {
   animation: vibrate-1 1s linear infinite both;
 }
 
