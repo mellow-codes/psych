@@ -1,68 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Psyched!</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Barrio&family=Lacquer&family=Rubik&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Zen+Dots&display=swap" rel="stylesheet">
-</head>
-
-<div class="navigation">
-  <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
-  <label for="nav-toggle" class="navigation__button">
-    <span class="navigation__icon" aria-label="toggle navigation menu"></span>
-  </label>
-  <div class="navigation__background"></div>
-
-  <nav class="navigation__nav" role="navigation">
-    <ul class="navigation__list">
-      <li class="navigation__item">
-        <a href="index.html" class="navigation__link">Home</a>
-      </li>
-      <li class="navigation__item">
-        <a href="overview.html" class="navigation__link">Overview</a>
-      </li>
-      <li class="navigation__item">
-        <a href="catalog.html" class="navigation__link">Psychedelics Catalog</a>
-      </li>
-      <li class="navigation__item">
-        <a href="#" class="navigation__link">Getting Started</a>
-      </li>
-      <li class="navigation__item">
-        <a href="#" class="navigation__link">About</a>
-      </li>
-      <li class="navigation__item">
-        <a href="#" class="navigation__link">Sources</a>
-      </li>
-    </ul>
-  </nav>
-</div>
-
-<body>
-
-  <section class="parent">
-
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Psyched!</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Barrio&family=Lacquer&family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Zen+Dots&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+  <body>
+    <div id="nav-layout"></div>
+    <section class="parent">
     <article class="a1">
       <header class="htwo">
-        <h1>Psyched!</h1>
-      </header>
+      <a href="index.html" class="psyched"><h1>Psyched!</h1></a></header>
     </article>
-
     <article class="headline">
       <h1 class="flicker">This is</h1>
       <h1 class="flicker"> your sign. </h1>
     </article>
-
       <h2 class="subheader">The future of mental health treatment is here.</h2>
-
-
-  </section>
-
-</body>
-
+    </section>
+  </body>
 </html>
+<script>
+  $(function(){
+    $("#nav-layout").load("nav.html");
+  });
+</script>
