@@ -154,8 +154,6 @@ h1.flicker {
  }
 }
 
-
-
 header.htwo {
   font-size: 0.5em;
   text-align: left;
@@ -169,11 +167,28 @@ h1 {
   text-shadow: 5px 5px 0 #000000;
 }
 
+
+@media screen and (max-width:420px) {
+  h1 {
+    font-size:3em;
+    text-shadow: 1.5px 1.5px 0 #000000;
+  }
+}
+
+
 h2.subheader {
     text-shadow: 1px 1px 0 white;
     font-size: 2em;
     text-align: center;
     color: #9377e5;
+}
+
+
+@media screen and (max-width:420px) {
+  h2.subheader {
+    font-size:1.3em;
+    margin: 20px;
+  }
 }
 
 
@@ -196,7 +211,6 @@ article {
   padding: 20px;
 }
 
-
 article.question {
   font-family: 'Montserrat', sans-serif;
   text-shadow: none;
@@ -210,6 +224,14 @@ article.question {
   margin-right: 50px;
 }
 
+@media screen and (max-width:420px) {
+ article.question {
+   margin: 2px;
+   font-size: 1em;
+  text-align: center;
+ }
+}
+
 article.questiontwo {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
@@ -220,14 +242,33 @@ article.questiontwo {
   margin-left: 50px;
 }
 
+@media screen and (max-width:420px) {
+ article.questiontwo {
+   margin: 10px;
+   font-size: 1em;
+  text-align: center;
+ }
+}
+
+
 article.what {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5em;
   padding-left: 50px;
   padding-right: 50px;
   line-height: 30px;
-  text-align: right;
+  text-align: left;
 }
+
+@media screen and (max-width:420px) {
+ article.what {
+  font-size: 1em;
+  line-height: 20px;
+  padding: 30px;
+  margin: 0px;
+ }
+}
+
 
 article.how {
   font-family: 'Montserrat', sans-serif;
@@ -236,6 +277,15 @@ article.how {
   padding-right: 50px;
   line-height: 30px;
   padding-bottom: 50px;
+}
+
+@media screen and (max-width:420px) {
+ article.how {
+  font-size: 1em;
+  line-height: 20px;
+  padding: 30px;
+  margin: 0px;
+ }
 }
 
 body.drug {
@@ -259,7 +309,14 @@ h3 {
   color: black;
   text-align: center;
   font-size: 4em;
+}
 
+@media screen and (max-width:420px) {
+ h3 {
+  font-size: 2em;
+  padding: none;
+  margin: none;
+ }
 }
 
 article.description {
@@ -271,11 +328,27 @@ line-height: 1.2em;
 padding-left: 50px;
 }
 
+@media screen and (max-width:420px) {
+ article.description {
+  font-size: 1em;
+  padding: 20px;
+  margin: 2px;
+ }
+}
+
 article.benefits {
   color:purple;
   font-size: 2em;
   text-align: center;
   margin-top: 150px;
+}
+
+@media screen and (max-width:420px) {
+ article.benefits {
+  font-size: 1em;
+  padding: none;
+  margin: 2px;
+ }
 }
 
 article.benefits2 {
@@ -285,10 +358,28 @@ article.benefits2 {
   margin-top: 100px;
 }
 
+@media screen and (max-width:420px) {
+ article.benefits2 {
+  font-size: 1em;
+  margin: 2px;
+ }
+}
+
+
 img.structure {
 position: absolute;
 top: 180px;
 right: 70px;
+}
+
+@media screen and (max-width:420px) {
+  img.structure {
+    height: 50%;
+    width: 50%;
+    top: -10px;
+    left: 100px;
+    position: relative;
+ }
 }
 
 article.headline {
@@ -310,6 +401,13 @@ div.spheres {
   row-gap: 50px;
 }
 
+@media screen and (max-width:420px) {
+  div.spheres {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+  }
+}
+
 .lsd {
   width:250px;
   height: 250px;
@@ -327,6 +425,17 @@ div.spheres {
   text-decoration: none;
   color: inherit;
   justify-self: center;
+}
+
+@media screen and (max-width:420px) {
+  .lsd {
+    width: 200px;
+    height: 200px;
+    font-size: 30px;
+    align-self: center;
+    grid-column: 1;
+    grid-row: 2;
+  }
 }
 
 .lsd:hover {
@@ -352,6 +461,18 @@ div.spheres {
   justify-self: center;
 }
 
+@media screen and (max-width:420px) {
+  .mdma {
+    width: 200px;
+    height: 200px;
+    font-size: 30px;
+    align-self: center;
+    grid-column: 1;
+    grid-row: 3;
+  }
+}
+
+
 .mdma:hover {
   animation: vibrate-1 1s linear infinite both;
 }
@@ -373,6 +494,17 @@ div.spheres {
   text-decoration: none;
   color: inherit;
   justify-self: center;
+}
+
+@media screen and (max-width:420px) {
+  .aya {
+    width: 200px;
+    height: 200px;
+    font-size: 20px;
+    align-self: center;
+    grid-column: 1;
+    grid-row: 4;
+  }
 }
 
 .aya:hover {
@@ -398,6 +530,17 @@ div.spheres {
   justify-self: center;
 }
 
+@media screen and (max-width:420px) {
+  .shroom {
+    width: 200px;
+    height: 200px;
+    font-size: 20px;
+    align-self: center;
+    grid-column: 1;
+    grid-row: 5;
+  }
+}
+
 .shroom:hover {
   animation: vibrate-1 1s linear infinite both;
 }
@@ -420,10 +563,19 @@ div.spheres {
   color: inherit;
   justify-self: center;
   align-self: center;
+	animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
-.shroom:hover {
-  animation: vibrate-1 1s linear infinite both;
+@media screen and (max-width:420px) {
+  .catalog-heading {
+    grid-row: 1;
+    grid-column: 1;
+    background: none;
+    border: none;
+    font-size: 40px;
+    width: 100%;
+    height: auto;
+  }
 }
 
 h1.source {
@@ -434,6 +586,13 @@ h1.source {
   text-shadow: none;
   margin-top: 50px;
   margin-bottom: 30px;
+}
+
+@media screen and (max-width:420px) {
+  h1.source {
+    font-size:2em;
+    margin-top:30px;
+  }
 }
 
 article.citations {
@@ -448,10 +607,46 @@ article.citations {
   margin-left: 100px;
 }
 
+@media screen and (max-width:420px) {
+  article.citations {
+    margin: 20px;
+  }
+}
+
 body.sources {
   background: url(../images/purple.jpg) center no-repeat;
   background-size: 140%;
 }
+
+@media screen and (max-width:420px) {
+body.sources {
+  background-size:cover;
+  }
+}
+
+
+/* ----------------------------------------------
+ * Generated by Animista on 2022-12-14 18:6:17
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info.
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation fade-in
+ * ----------------------------------------
+ */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
 /* ----------------------------------------------
  * Generated by Animista on 2022-11-10 16:5:21
  * Licensed under FreeBSD License.
@@ -488,6 +683,10 @@ body.sources {
   }
 }
 
+
+/* link for nav menu: https://codepen.io/StheffaneNunes/pen/oNxzPxE  */
+
+
 .navigation__checkbox {
   display: none;
 }
@@ -515,6 +714,14 @@ body.sources {
   }
 }
 
+@media screen and (max-width:420px) {
+  .navigation__button {
+      top: 1rem;
+      right: 1rem;
+      height: 3rem;
+      width: 3rem;
+  }
+}
 .navigation__background {
   position: fixed;
   top: 2rem;
@@ -533,6 +740,15 @@ body.sources {
   .navigation__background {
       top: 2.5rem;
       right: 2.5rem;
+      height: 3rem;
+      width: 3rem;
+  }
+}
+
+@media screen and (max-width:420px) {
+  .navigation__background {
+      top: 1rem;
+      right: 1rem;
       height: 3rem;
       width: 3rem;
   }
@@ -624,6 +840,18 @@ body.sources {
   width: 2.2rem;
   height: 2px;
   background-color: #4A676A;
+}
+
+@media screen and (max-width:420px) {
+  .navigation__icon {
+    margin-top: 1.5rem;
+  }
+
+  .navigation__icon,
+  .navigation__icon::before,
+  .navigation__icon::after {
+      width: 1.5rem;
+  }
 }
 
 @media (min-width: 768px) {
